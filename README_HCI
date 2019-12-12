@@ -1,0 +1,15 @@
+Here are the changes we made to the source code:
+
+To add a pop up box when hovering over import button:
+tooltips.cpp: lines 828-830
+
+To add the import button to UI:
+tool_bar.xml: lines 116-126
+
+To add label to volume controls:
+mixer_column_volume_gain.xml: lines 40-43
+
+*** We were not able to link our import button to the function to open a music directoy; however, the function to do so can be found in:
+dlgpreflibrary.cpp: lines 206-215
+
+To run executable, type ./mixxx in terminal
