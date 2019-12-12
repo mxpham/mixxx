@@ -9,7 +9,7 @@
 #include "util/cmdlineargs.h"
 #include "util/experiment.h"
 #include "vinylcontrol/defs_vinylcontrol.h"
-
+#include "preferences/dialog/dlgpreflibrary.h"
 namespace {
 
 const int kMaxLoadToDeckActions = 4;
@@ -580,9 +580,29 @@ void WMainMenuBar::initialize() {
     pHelpAboutApp->setMenuRole(QAction::AboutRole);
     connect(pHelpAboutApp, SIGNAL(triggered()),
             this, SIGNAL(showAbout()));
+    pHelpMenu->addSeparator();
+    pHelpMenu->addAction(pHelpAboutApp);
+    
+
 
     pHelpMenu->addAction(pHelpAboutApp);
     addMenu(pHelpMenu);
+    
+    
+    //TEST MENU (changes made to project)
+    QMenu* pTestMenu = new QMenu(tr("&Import"), this);
+    
+    QString testTitle = tr("&Add songs");
+    QString testAbout = tr("Add songs");
+    auto pHelpTest = new QAction(testTitle, this);
+    pHelpTest->setStatusTip(testAbout);
+    pHelpTest->setWhatsThis(buildWhatsThis(testTitle, testAbout));
+    connect(pHelpTest, SIGNAL(triggered()),
+            this, SLOT(slotAddDir()));
+    pTestMenu->addAction(pHelpTest);
+    pTestMenu->addSeparator();
+    addMenu(pTestMenu);
+    
 }
 
 void WMainMenuBar::onLibraryScanStarted() {
@@ -708,3 +728,4 @@ void VisibilityControlConnection::slotActionToggled(bool toggle) {
         m_pControl->set(toggle ? 1.0 : 0.0);
     }
 }
+

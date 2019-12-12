@@ -113,6 +113,17 @@
                 <SetVariable name="label">Bal</SetVariable>
               </Template>
 
+              <Template src="skin:left_2state_button.xml">
+                <SetVariable name="TooltipId">add_songs</SetVariable>
+                <SetVariable name="MinimumSize">22,22</SetVariable>
+                <SetVariable name="MaximumSize">22,22</SetVariable>
+                <SetVariable name="SizePolicy"><Variable name="SmallWideButtonSizePolicy"/></SetVariable>
+                <SetVariable name="state_0_text">+</SetVariable>
+                <SetVariable name="state_1_text">+</SetVariable>
+              </Template>
+              <Label>
+                <Text>Import Songs</Text>
+              </Label>
             </Children>
           </WidgetGroup>
 

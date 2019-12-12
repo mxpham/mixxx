@@ -42,6 +42,7 @@
             <ObjectName>KnobLabel</ObjectName>
             <Text><Variable name="label"/></Text>
           </Label>
+          
         </Children>
       </WidgetGroup>
     </Children>

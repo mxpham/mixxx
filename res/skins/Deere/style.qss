@@ -540,7 +540,7 @@ WLibrary QRadioButton::indicator:unchecked {
   background-color: #4B4B4B;
   border: 1px solid #4B4B4B;
   border-radius: 2px;
-  outline: none; 
+  outline: none;
   }
   #DlgMissing > QPushButton,
   #DlgHidden > QPushButton,
@@ -1363,7 +1363,7 @@ WNumberRate {
 
 #MixerStrip_4Decks {
   padding: 0px 5px;
-  qproperty-layoutAlignment: 'AlignHCenter';  /* 
+  qproperty-layoutAlignment: 'AlignHCenter';  /*
   background-color: #911661; */
 }
 

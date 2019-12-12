@@ -37,6 +37,10 @@
           <EmitOnDownPress>false</EmitOnDownPress>
         </Connection>
       </SliderComposed>
+      <Label>
+        <ObjectName>KnobLabel</ObjectName>
+        <Text>Volume</Text>
+      </Label>
     </Children>
     <Connection>
       <ConfigKey>[Skin],show_faders</ConfigKey>

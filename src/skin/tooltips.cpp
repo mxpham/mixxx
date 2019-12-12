@@ -824,6 +824,10 @@ void Tooltips::addStandardTooltips() {
             << tr("Assign Effect Unit")
             << tr("Route the master mix through this effect unit.")
             << effectsWithinUnit;
+    
+    add("add_songs")
+            << tr("Importing Songs")
+            << tr("Add songs from directory to start mixing");
 
     add("EffectUnit_BusLeft_enabled")
             << tr("Assign Effect Unit")

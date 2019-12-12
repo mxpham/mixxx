@@ -129,6 +129,7 @@
                 <SetVariable name="state_1_unpressed">icon/ic_headphones_48px.svg</SetVariable>
                 <SetVariable name="left_connection_control"><Variable name="group"/>,pfl</SetVariable>
               </Template>
+              
             </Children>
           </WidgetGroup>
 

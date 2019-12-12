@@ -23,6 +23,7 @@ class VisibilityControlConnection : public QObject {
     void slotReconnectControl();
     void slotControlChanged();
     void slotActionToggled(bool toggle);
+    
 
   private:
     ConfigKey m_key;
