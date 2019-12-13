@@ -1,4 +1,4 @@
-This is for UML's Human Interaction Course to redesign the Mixxx dj software. For the original source code, visit https://github.com/mixxxdj/mixxx
+This is for UML's Human Interaction Course to redesign the Mixxx dj software. For the original source code, visit https://github.com/mixxxdj/mixxx. Please read README_HCI for details on changes
 
 # Mixxx 
 [![GitHub latest tag](https://img.shields.io/github/tag/mixxxdj/mixxx.svg)](https://www.mixxx.org/download)
